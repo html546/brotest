@@ -42,7 +42,10 @@
     echo "<br/>";
 }*/
 
-$i = 0;
+/**
+ * break退出指定层数
+ */
+/*$i = 0;
 while(++$i){
     switch ($i){
         case 5:
@@ -53,4 +56,13 @@ while(++$i){
             break 2;                                //使用break2退出二层
     }
 }
-echo $i;
+echo $i;*/
+
+$sum = 0;
+for ($i = 0;$i <= 100;$i++){
+    if($i % 10 == 3){
+        continue;
+    }
+    $sum += $i;
+}
+echo "结果为:$sum";
