@@ -6,15 +6,15 @@
  * Time: 22:06
  */
 
-$i = 1;
+for ($i = 0,$j = 50;$i<100;$i++){
+    while ($j--){
+        if($j == 17){
+            goto end;
+        }else{
+            echo "变量i = {$i},变量j = {$j}<br/>";
+        }
+    }
+}
 
-st:
-
-    echo "第{$i}次循环<br/>";
-    if($i++ == 10)
-        goto end;
-
-    goto st;
-
-    end:
-    echo "语句结束.";
+echo "i = $i";
+end :
