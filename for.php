@@ -30,7 +30,13 @@
  * 反向输出九九乘法表
  */
 for ($i = 9;$i>=1;$i--){
+    if($i < 5){
+        break;
+    }
     for ($j = $i;$j >= 1;$j--){
+        if($j < 5){
+            break;
+        }
         echo "$j * $i = ".$j*$i."&nbsp;&nbsp;";
     }
     echo "<br/>";
