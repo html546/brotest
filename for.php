@@ -29,7 +29,7 @@
 /**
  * 反向输出九九乘法表
  */
-for ($i = 9;$i>=1;$i--){
+/*for ($i = 9;$i>=1;$i--){
     if($i < 5){
         break;
     }
@@ -40,4 +40,17 @@ for ($i = 9;$i>=1;$i--){
         echo "$j * $i = ".$j*$i."&nbsp;&nbsp;";
     }
     echo "<br/>";
+}*/
+
+$i = 0;
+while(++$i){
+    switch ($i){
+        case 5:
+            echo "变量为5时，只退出switch语句<br/>";
+            break 1;                                //使用break1退出一层
+        case 10:
+            echo "当变量为10时，不仅退出switch而且还退出while循环<br/>";
+            break 2;                                //使用break2退出二层
+    }
 }
+echo $i;
